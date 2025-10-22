@@ -26,9 +26,6 @@ jobs:
           java-version: '21'
           cache: gradle
 
-      - name: Spotless check
-        run: ./gradlew --no-daemon spotlessCheck
-
       - name: Build & test (includes Checkstyle)
         run: ./gradlew --no-daemon clean check
 
